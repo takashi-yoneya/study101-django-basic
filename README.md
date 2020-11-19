@@ -5,10 +5,6 @@ DBの中身を参照するため、DBクライアントをインストールし�
 ※下記は参考のため、お好きなDBクライアントで構いません
 参考：https://forest.watch.impress.co.jp/library/software/heidisql/
 
-## 課題０
-Djangoの実行環境を作るためにHerokuというサーバーレスの仕組みを使ってアプリをデプロイしてください
-参考：https://qiita.com/hagyyyy1992/items/466b5bab67118175be65
-
 ## 課題１
 好きな名前のアプリケーションを作成し、「hello world」と
 固定で表示するWebページを作成してください。
