@@ -37,5 +37,13 @@ DBに登録された鬼滅のキャラクターを「キャラクター一覧」
 
 ## ７
 GCPを使用して６までに作成したDjangoプロジェクトをデプロイしてください<BR>
-参考：https://hack.nikkei.com/blog/cloud_run_blog/  
+参考：https://hack.nikkei.com/blog/cloud_run_blog/  <BR>
+一部変更が必要です。<BR>
+  
+・Dockerファイルは以下のようにする<BR>
+サイト記載：CMD gunicorn config.wsgi -b 0.0.0.0:$PORT<BR>
+修正：CMD gunicorn <プロジェクト名>.wsgi -b 0.0.0.0:$PORT<BR>
+・settingsのallowshostに自身のGCPのホスト名を追加<BR>
+・--platform managed を付与<BR>
+gcloud beta run deploy <サービス名> --image gcr.io/<プロジェクトID>/<イメージ名> --region us-central1 --platform managed
 
