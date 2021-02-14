@@ -36,14 +36,7 @@ migrateしてDBにテーブルができることを確認してください。
 DBに登録された鬼滅のキャラクターを「キャラクター一覧」からリスト表示できようにしてください
 
 ## ７
-GCPを使用して６までに作成したDjangoプロジェクトをデプロイしてください<BR>
-参考：https://hack.nikkei.com/blog/cloud_run_blog/  <BR>
-一部変更が必要です。<BR>
-  
-・Dockerファイルは以下のようにする<BR>
-サイト記載：CMD gunicorn config.wsgi -b 0.0.0.0:$PORT<BR>
-修正：CMD gunicorn <プロジェクト名>.wsgi -b 0.0.0.0:$PORT<BR>
-・settingsのallowshostに自身のGCPのホスト名を追加<BR>
-・デプロイコマンドは--platform managed を付与<BR>
-gcloud beta run deploy <サービス名> --image gcr.io/<プロジェクトID>/<イメージ名> --region us-central1 --platform managed
+AWSにサイトをデプロイして外部から参照できるようにしてください。
+参考書籍：https://af.moshimo.com/af/c/click?a_id=2003347&p_id=170&pc_id=185&pl_id=27060&url=https%3A%2F%2Fwww.amazon.co.jp%2Fdp%2FB07YY5RDPC
+
 
