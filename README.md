@@ -40,8 +40,4 @@ DBに登録された鬼滅のキャラクターを「キャラクター一覧」
 このファイルはgithubにもpushすることで、他の方も簡単に環境の再現が可能になります。  
 `pip freeze > requirements.txt`
 
-## 発展
-AWSにサイトをデプロイして外部から参照できるようにしてください。
-参考書籍：https://af.moshimo.com/af/c/click?a_id=2003347&p_id=170&pc_id=185&pl_id=27060&url=https%3A%2F%2Fwww.amazon.co.jp%2Fdp%2FB07YY5RDPC
-
 
